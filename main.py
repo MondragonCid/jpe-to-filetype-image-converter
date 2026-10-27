@@ -2,7 +2,7 @@ from pathlib import Path
 from PIL import Image
 
 def get_target_format() -> str:
-    """Prompts the user to pick jpg or png."""
+    """Prompt the user to pick jpg or png."""
     while True:
         choice = input("Enter target format (png / jpg): ").strip().lower()
         if choice in ("png", "jpg", "jpeg"):
